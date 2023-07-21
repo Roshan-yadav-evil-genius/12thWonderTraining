@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GameHubModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BATTLEHISTORY">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PID" Type="int" Nullable="false" />
+    <Property Name="GID" Type="int" Nullable="false" />
+    <Property Name="SCORE" Type="int" />
+    <Property Name="WITHP" Type="int" />
+  </EntityType>
+  <EntityType Name="GAMES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NAME" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="varchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PLAYERS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NAME" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="PSWD" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__BATTLEHIS__WITHP__2B5F6B28">
+    <End Role="PLAYERS" Type="Self.PLAYERS" Multiplicity="0..1" />
+    <End Role="BATTLEHISTORY" Type="Self.BATTLEHISTORY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PLAYERS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BATTLEHISTORY">
+        <PropertyRef Name="WITHP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BATTLEHISTO__GID__2A6B46EF">
+    <End Role="GAMES" Type="Self.GAMES" Multiplicity="1" />
+    <End Role="BATTLEHISTORY" Type="Self.BATTLEHISTORY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GAMES">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BATTLEHISTORY">
+        <PropertyRef Name="GID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BATTLEHISTO__PID__297722B6">
+    <End Role="PLAYERS" Type="Self.PLAYERS" Multiplicity="1" />
+    <End Role="BATTLEHISTORY" Type="Self.BATTLEHISTORY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PLAYERS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BATTLEHISTORY">
+        <PropertyRef Name="PID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="GETNAMEHAVINGCHARACTER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="char" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="GameHubModelStoreContainer">
+    <EntitySet Name="BATTLEHISTORY" EntityType="Self.BATTLEHISTORY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GAMES" EntityType="Self.GAMES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PLAYERS" EntityType="Self.PLAYERS" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__BATTLEHIS__WITHP__2B5F6B28" Association="Self.FK__BATTLEHIS__WITHP__2B5F6B28">
+      <End Role="PLAYERS" EntitySet="PLAYERS" />
+      <End Role="BATTLEHISTORY" EntitySet="BATTLEHISTORY" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BATTLEHISTO__GID__2A6B46EF" Association="Self.FK__BATTLEHISTO__GID__2A6B46EF">
+      <End Role="GAMES" EntitySet="GAMES" />
+      <End Role="BATTLEHISTORY" EntitySet="BATTLEHISTORY" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BATTLEHISTO__PID__297722B6" Association="Self.FK__BATTLEHISTO__PID__297722B6">
+      <End Role="PLAYERS" EntitySet="PLAYERS" />
+      <End Role="BATTLEHISTORY" EntitySet="BATTLEHISTORY" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

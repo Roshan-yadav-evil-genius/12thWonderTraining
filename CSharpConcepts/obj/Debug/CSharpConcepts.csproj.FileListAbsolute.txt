@@ -1,0 +1,3 @@
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\CSharpConcepts\obj\Debug\CSharpConcepts.csproj.AssemblyReference.cache
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\CSharpConcepts\obj\Debug\CSharpConcepts.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\CSharpConcepts\obj\Debug\CSharpConcepts.csproj.CoreCompileInputs.cache

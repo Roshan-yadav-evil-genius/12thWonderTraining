@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GameHubModelStoreContainer" CdmEntityContainer="GameHubEntities">
+    <EntitySetMapping Name="BATTLEHISTORies">
+      <EntityTypeMapping TypeName="GameHubModel.BATTLEHISTORY">
+        <MappingFragment StoreEntitySet="BATTLEHISTORY">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="GID" ColumnName="GID" />
+          <ScalarProperty Name="SCORE" ColumnName="SCORE" />
+          <ScalarProperty Name="WITHP" ColumnName="WITHP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GAMES">
+      <EntityTypeMapping TypeName="GameHubModel.GAME">
+        <MappingFragment StoreEntitySet="GAMES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PLAYERS">
+      <EntityTypeMapping TypeName="GameHubModel.PLAYER">
+        <MappingFragment StoreEntitySet="PLAYERS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="PSWD" ColumnName="PSWD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GETNAMEHAVINGCHARACTER" FunctionName="GameHubModel.Store.GETNAMEHAVINGCHARACTER">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GameHubModel.GETNAMEHAVINGCHARACTER_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="PSWD" ColumnName="PSWD" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

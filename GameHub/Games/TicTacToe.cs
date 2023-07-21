@@ -1,11 +1,18 @@
 using GameAssetSkeletons;
+using ReadWriteOperation;
 
 
 namespace TicTacToeGame
 {
 
+
     class TickTacToe : GameSkeleton
     {
+        static void logMsg(logLevel level, string msg)
+        {
+            Log.logEvent("TickTacToe", level, msg);
+
+        }
         private enum Situation
         {
             Win,
@@ -20,9 +27,9 @@ namespace TicTacToeGame
         };
 
         private string[] Board = {
-            "1 ", "2 ", "3 ",
-            "4 ", "5 ", "6 ",
-            "7 ", "8 ", "9 "
+            "1", "2", "3",
+            "4", "5", "6",
+            "7", "8", "9"
         };
         public TickTacToe()
         {
@@ -34,8 +41,9 @@ namespace TicTacToeGame
 
         public override void Start()
         {
+            logMsg(logLevel.INFO, "Starting");
             string? pos = "";
-            string symbol = "❌";
+            string symbol = "X";
             bool AnyOnewin = false;
             bool Draw = false;
 
@@ -61,12 +69,14 @@ namespace TicTacToeGame
                             }
                             else
                             {
-                                symbol = (symbol == "❌") ? "⭕" : "❌";
+                                symbol = (symbol == "X") ? "O" : "X";
                                 Console.Clear();
                             }
                             break;
                         case false:
                             Console.Clear();
+                            logMsg(logLevel.WARNING, "User try To fill Captured Place");
+
                             Console.WriteLine("[!] That Space Already Taken Pass diffrent position\n");
                             break;
                     }
@@ -113,7 +123,7 @@ namespace TicTacToeGame
         {
             foreach (string cell in Board)
             {
-                if (cell != "❌" && cell != "⭕")
+                if (cell != "X" && cell != "O")
                 {
                     return false;
                 }
@@ -123,11 +133,11 @@ namespace TicTacToeGame
 
         private void ShowBoard()
         {
-            
+
             Console.WriteLine($" {Board[0]} | {Board[1]} | {Board[2]} ");
-            Console.WriteLine("----+----+----");
+            Console.WriteLine("---+---+---");
             Console.WriteLine($" {Board[3]} | {Board[4]} | {Board[5]} ");
-            Console.WriteLine("----+----+----");
+            Console.WriteLine("---+---+---");
             Console.WriteLine($" {Board[6]} | {Board[7]} | {Board[8]} \n\n");
         }
 
@@ -137,7 +147,7 @@ namespace TicTacToeGame
             {
                 return false;
             }
-            else if (Board[pos - 1] == $"{pos} ")
+            else if (Board[pos - 1] == $"{pos}")
             {
                 Board[pos - 1] = Symbol;
                 return true;
