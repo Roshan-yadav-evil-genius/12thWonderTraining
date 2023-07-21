@@ -34,6 +34,12 @@ namespace LtestCsharpVersionCode
             // InterfaceType.Execute(args);
             // var UnicodeType = new UnicodeTypes.BaseClass();
             // UnicodeType.Execute(args);
+            // var typeSystem = new AnonymousType();
+            // typeSystem.Execute();
+            // var typeSystem = new GenericsType();
+            // typeSystem.Execute();
+            var typeSystem = new RecordType();
+            typeSystem.Execute();
         }
     }
 }

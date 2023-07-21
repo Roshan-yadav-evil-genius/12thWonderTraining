@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace CSharpConcepts.Concepts.ValueType
+namespace LtestCsharpVersionCode.ValueType
 {
     internal class NullableType
     {

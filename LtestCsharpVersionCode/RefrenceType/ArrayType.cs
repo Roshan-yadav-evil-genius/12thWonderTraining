@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CSharpConcepts.Concepts.RefrenceType
+namespace LtestCsharpVersionCode.RefrenceType
 {
     internal class ArrayType
     {

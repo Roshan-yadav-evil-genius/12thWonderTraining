@@ -11,11 +11,22 @@ namespace LtestCsharpVersionCode.TypeSystem
     {
         public void Execute()
         {
-            var v = new { Amount = 108, Message = "Hello" };
+            var packet = new
+            {
+                sender = "RoshanYadav",
+                Message = "Hello",
+                receiver = "satyam",
+                priority = 100,
+                metaData = new
+                {
+                    senderIp = "192.168.27",
+                    receiverIp = "192.274.78"
+                }
+            };
 
-            // Rest the mouse pointer over v.Amount and v.Message in the following
-            // statement to verify that their inferred types are int and string.
-            Console.WriteLine(v.Amount + v.Message);
+            Console.WriteLine(packet);
+            Console.WriteLine(packet.sender);
+
         }
     }
 }

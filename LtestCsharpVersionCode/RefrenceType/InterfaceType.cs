@@ -22,7 +22,7 @@ namespace LtestCsharpVersionCode.RefrenceType
     internal class InterfaceType : IDatabase
 
     {
-        public BaseClass()
+        public InterfaceType()
         {
 
             Username = "12thWonder";

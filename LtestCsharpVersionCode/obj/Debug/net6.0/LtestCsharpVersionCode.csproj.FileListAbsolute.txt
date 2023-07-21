@@ -1,0 +1,15 @@
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\LtestCsharpVersionCode\obj\Debug\net6.0\LtestCsharpVersionCode.csproj.AssemblyReference.cache
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\LtestCsharpVersionCode\obj\Debug\net6.0\LtestCsharpVersionCode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\LtestCsharpVersionCode\obj\Debug\net6.0\LtestCsharpVersionCode.AssemblyInfoInputs.cache
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\LtestCsharpVersionCode\obj\Debug\net6.0\LtestCsharpVersionCode.AssemblyInfo.cs
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\LtestCsharpVersionCode\obj\Debug\net6.0\LtestCsharpVersionCode.csproj.CoreCompileInputs.cache
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\LtestCsharpVersionCode\bin\Debug\net6.0\LtestCsharpVersionCode.exe
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\LtestCsharpVersionCode\bin\Debug\net6.0\LtestCsharpVersionCode.deps.json
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\LtestCsharpVersionCode\bin\Debug\net6.0\LtestCsharpVersionCode.runtimeconfig.json
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\LtestCsharpVersionCode\bin\Debug\net6.0\LtestCsharpVersionCode.dll
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\LtestCsharpVersionCode\bin\Debug\net6.0\LtestCsharpVersionCode.pdb
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\LtestCsharpVersionCode\obj\Debug\net6.0\LtestCsharpVersionCode.dll
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\LtestCsharpVersionCode\obj\Debug\net6.0\refint\LtestCsharpVersionCode.dll
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\LtestCsharpVersionCode\obj\Debug\net6.0\LtestCsharpVersionCode.pdb
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\LtestCsharpVersionCode\obj\Debug\net6.0\LtestCsharpVersionCode.genruntimeconfig.cache
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\LtestCsharpVersionCode\obj\Debug\net6.0\ref\LtestCsharpVersionCode.dll

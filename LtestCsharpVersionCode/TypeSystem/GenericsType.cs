@@ -6,26 +6,29 @@ using System.Threading.Tasks;
 
 namespace LtestCsharpVersionCode.TypeSystem
 {
-    public class GenericList<T>
+    // public class GenericList<T>
+    // {
+    //     public void Add(T input) { }
+    // }
+
+    public class Calculator<T>
     {
-        public void Add(T input) { }
+
+        public static void showBoth(T first, T second)
+        {
+            Console.Write(first);
+            Console.WriteLine(second);
+
+        }
     }
     internal class GenericsType
     {
-        private class ExampleClass { }
-        static void Main()
+
+        public void Execute()
         {
-            // Declare a list of type int.
-            GenericList<int> list1 = new GenericList<int>();
-            list1.Add(1);
-
-            // Declare a list of type string.
-            GenericList<string> list2 = new GenericList<string>();
-            list2.Add("");
-
-            // Declare a list of type ExampleClass.
-            GenericList<ExampleClass> list3 = new GenericList<ExampleClass>();
-            list3.Add(new ExampleClass());
+            Calculator<int>.showBoth(1, 2);
+            Calculator<string>.showBoth("Roshan", "Yadav");
+            Calculator<bool>.showBoth(true, false);
         }
     }
 }
