@@ -43,6 +43,11 @@ namespace ReadWriteOperation
                     DateTime currentDate = DateTime.Now;
                     byte[] logBytes = Encoding.UTF8.GetBytes(data);
                     fileStream.Write(logBytes, 0, logBytes.Length);
+                    fileStream.Flush();
+                    // why we need flush?
+                    //  In critical applications where data integrity is crucial, you may want to call Flush() after writing important data to ensure that it is immediately persisted to disk. This reduces the risk of data loss in case of a system crash or unexpected shutdown.
+
+                    // In multi-threaded scenarios, you may use Flush() to synchronize data between threads. When one thread finishes writing data to the stream, you can call Flush() to ensure that the data is visible to other threads immediately.
                 }
             }
         }

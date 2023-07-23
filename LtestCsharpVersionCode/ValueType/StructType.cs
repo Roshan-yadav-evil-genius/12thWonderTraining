@@ -7,6 +7,7 @@ namespace LtestCsharpVersionCode.ValueType
     {
         struct Programmer
         {
+            public string data = "ok";
             public string Name;
             public int Age;
             public string Language;

@@ -34,7 +34,7 @@ namespace LtestCsharpVersionCode.RefrenceType
             int[,] id5 = new int[2, 2];
             Console.WriteLine($"id5: {id5}, Length: {id5.Length}, Rank: {id5.Rank}, IsFixedSize: {id5.IsFixedSize}, IsReadOnly: {id5.IsReadOnly}, IsSynchronized: {id5.IsSynchronized},");
 
-
+//WeakReference never iincrese size of array 
             // Array Methods
             // Clear
 

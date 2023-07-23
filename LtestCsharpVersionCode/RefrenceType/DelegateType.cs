@@ -3,6 +3,7 @@
 
 namespace LtestCsharpVersionCode.RefrenceType
 {
+
     public delegate int AddDelegate(int a, int b);
     public delegate void SubDelegate(int a, int b);
     public delegate int MulDelegate(int a, int b);
@@ -43,4 +44,5 @@ namespace LtestCsharpVersionCode.RefrenceType
             Console.WriteLine(addMulDelegate2(1, 2));
         }
     }
+
 }
