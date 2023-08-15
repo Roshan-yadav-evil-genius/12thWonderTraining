@@ -1,0 +1,8 @@
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\CollectionsConcept\bin\Debug\CollectionsConcept.exe.config
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\CollectionsConcept\bin\Debug\CollectionsConcept.exe
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\CollectionsConcept\bin\Debug\CollectionsConcept.pdb
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\CollectionsConcept\obj\Debug\CollectionsConcept.csproj.AssemblyReference.cache
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\CollectionsConcept\obj\Debug\CollectionsConcept.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\CollectionsConcept\obj\Debug\CollectionsConcept.csproj.CoreCompileInputs.cache
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\CollectionsConcept\obj\Debug\CollectionsConcept.exe
+C:\Users\Rosha\OneDrive\Documents\GitHub\C-Sharp-Learning-12thWonderTraining\CollectionsConcept\obj\Debug\CollectionsConcept.pdb

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rosha\\OneDrive\\Documents\\GitHub\\C-Sharp-Learning-12thWonderTraining\\LtestCsharpVersionCode\\LtestCsharpVersionCode.csproj",
+      "projectUniqueName": "E:\\sdToHddUpdate\\GitHub\\C-Sharp-Learning-12thWonderTraining\\LtestCsharpVersionCode\\LtestCsharpVersionCode.csproj",
       "projectName": "LtestCsharpVersionCode",
-      "projectPath": "C:\\Users\\Rosha\\OneDrive\\Documents\\GitHub\\C-Sharp-Learning-12thWonderTraining\\LtestCsharpVersionCode\\LtestCsharpVersionCode.csproj",
+      "projectPath": "E:\\sdToHddUpdate\\GitHub\\C-Sharp-Learning-12thWonderTraining\\LtestCsharpVersionCode\\LtestCsharpVersionCode.csproj",
       "packagesPath": "C:\\Users\\Rosha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rosha\\OneDrive\\Documents\\GitHub\\C-Sharp-Learning-12thWonderTraining\\LtestCsharpVersionCode\\obj\\",
+      "outputPath": "E:\\sdToHddUpdate\\GitHub\\C-Sharp-Learning-12thWonderTraining\\LtestCsharpVersionCode\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rosha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }
